@@ -1,0 +1,28 @@
+<RelativeLayout
+                android:id="@+id/slideshow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_160sdp"
+                android:visibility="visible">
+
+                <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                    android:id="@+id/slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true" />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:id="@+id/slideshow_count_dots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="horizontal" />
+
+            </RelativeLayout>
+            
+            
+             api ('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
+        exclude module: 'support-v4'
+    }
